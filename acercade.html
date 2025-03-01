@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Me</title>
+    <title>About</title>
     <style>
         table, th, td 
         {
@@ -11,20 +11,21 @@
     <!--Icono de la pagina-->
     <link rel="shortcut icon" href="img/moon.png" type="image/x-icon">
     <!--Referencia del CSS-->
-    <link rel="stylesheet" href="acercade.css">
+    <link rel="stylesheet" href="main.css">
     <!--Referencia del Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
+            <!--Transicion-->
             <a href="main.html">Main</a>
             <a href="acercade.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="servicios.html">Services</a>
             <a href="contacto.html">Contact</a>
         </nav>
-        <section class="header-texts"><!-- Titulo-->
+        <section class="textos-header">
             <h1>About Me</h1>
         </section>
         <div  class="wave"style="height: 150px; overflow: hidden;" >
@@ -37,67 +38,114 @@
         </div>
     </header>
     <main>
-        <section class="content-academy">
-        <h2 class="title">Where I trained academically</h2>
-        <div class="content-academy">
-            <img src="img/UADE.jpg" alt="" class="image-about-me">
-            <div class="content-texts">
-                <h3><span></span>UADE</h3>
-                <p>I am a graduate of the "Technology in Video Game Development and Programming" degree.</p>
+        <section class="contenedor sobre-nosotros">
+        <h2 class="titulo">My product</h2>
+        <div class="contenedor-sobre-nosotros">
+            <img src="img/contenido.avif" alt="" class="image-about-us">
+            <div class="contenido-textos">
+                <h3><span>1</span>Los mejores productos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur, quis esse numquam debitis officiis voluptatem quas voluptatibus corrupti, quisquam distinctio, eaque laudantium sequi earum. Minus ipsum dicta nulla voluptas!</p>
+                <h3><span>2</span>Los mejores productos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur, quis esse numquam debitis officiis voluptatem quas voluptatibus corrupti, quisquam distinctio, eaque laudantium sequi earum. Minus ipsum dicta nulla voluptas!</p>
             </div>
         </div>
         </section>
-
-        <section class="aboutMe">
-            <h2 class="title">What did I learn?</h2>
-            <div class="content">
-                <div class="Learn-port">
-                    <!--Unity-->
-                    <div class="image-port">
-                        <img src="img/Unity Logo.png" alt="" width="00">
-                    </div>
-                    <!--Unreal Engine-->
-                    <div class="image-port">
-                        <img src="img/UnrealEngine.jpg" alt="" width="400">
-                    </div>
-                    <!--Amplify Shaders-->
-                    <div class="image-port">
-                        <img src="img/Amplify.png" alt="" width="400">
-                    </div>
-                    <!--Ilustrator-->
-                    <div class="image-port">
-                        <img src="img/IIlustrator.png" alt="" width="400">
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port">
+                    <!--Imagen1-->
+                    <div class="imagen-port">
+                        <img src="img/shadow-family.webp" alt="" width="800">
+                        <div class="hover-galeria">
+                            <img src="img/moon.png" alt="" width="100">
+                            <p>Nuestro Trabajo</p>
                         </div>
                     </div>
-                    <!--Photon-->
+                    <!--Imagen2-->
                     <div class="imagen-port">
-                        <img src="img/photon logo.png" alt="" width="200">
+                        <img src="img/logo.jpg" alt="" width="800">
+                        <div class="hover-galeria">
+                            <img src="img/moon.png" alt=""width="100">
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <!--Imagen3-->
+                    <div class="imagen-port">
+                        <img src="img/logo2.jpg" alt="" width="800">
+                        <div class="hover-galeria">
+                            <img src="img/moon.png" alt=""width="100">
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <!--Imagen4-->
+                    <div class="imagen-port">
+                        <img src="img/logo3.png" alt="" width="800">
+                        <div class="hover-galeria">
+                            <img src="img/moon.png" alt=""width="100">
+                            <p>Nuestro Trabajo</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo">Que dicen nuestros clientes</h2>
+            <div class="cards">
+                <div class="card">
+                     <!--Goku-->
+                    <img src="img/goku.avif" alt="" width="200">
+                    <div class="contenido-texto-card">
+                        <h4>Goku</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, possimus?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <!--Kitty-->
+                   <img src="img/kitty.jpg" alt="" width="200">
+                   <div class="contenido-texto-card">
+                       <h4>Hello Kitty</h4>
+                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, possimus?</p>
+                   </div>
+               </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestro servicio</h2>
+                <div class="servicio-cont">
+                    <!--Primer servicio-->
+                    <div class="servicio ind">
+                        <img src="img/hist.jpg" alt="" width="800">
+                        <h3>Historia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, saepe.</p>
+                    </div>
+                    <!--Segundo servicio-->
+                    <div class="servicio ind">
+                        <img src="img/hist.jpg" alt="" width="800">
+                        <h3>Agrupacion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, saepe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>2214942802</p>
+            </div>
+            <div class="content-foo">
+                <h4>Gmail</h4>
+                <p>gonzaliag@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Argentina</h4>
+                <p>Buenos Aires</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Gonzaliag Design</h2>
+    </footer>
 </body>
-<!--FOOTER-->
-<footer>
-    <div class="content-footer">
-        <div class="content-footer">
-            <h4>Discord</h4>
-            <p>Xarlordmith#5433</p>
-        </div>
-        <br>
-        <div class="content-footer">
-            <h4>Gmail</h4>
-            <p>gonzaliag@gmail.com</p>
-        </div>
-        <br>
-        <div class="content-footer">
-            <h4>Location</h4>
-            <p>Argentina, Buenos Aires</p>
-        </div>
-        <br>
-    </div>
-    <h2 class="final-title">&copy; Gonzaliag Design</h2>
-</footer>
 </html>

@@ -47,6 +47,7 @@ nav > a{
     font-weight: 300;/*ligero*/
     text-decoration: none;/*exceso de rayado*/
     margin-right: 10px;/*separacion*/
+    font-size: 20px;
 }
 
 nav > a:hover{/*Cuando pasamos el mouse por arriba*/
@@ -121,6 +122,10 @@ header .textos-header{
 /*Portfolio*/
 .portafolio{
     background: rgb(90, 82, 105);
+}
+
+#titulo-portfolio{
+    color: white;
 }
 
 .galeria-port{
