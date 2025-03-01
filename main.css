@@ -183,9 +183,11 @@ header .textos-header{
 .cards{
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
 }
 .contenido-texto-card p{
     color: white;
+    font-size: 14px;
 }
 .contenido-texto-card h4{
     text-align: center;
@@ -197,22 +199,25 @@ header .textos-header{
 .cards .card{
     background: rgb(44, 44, 44);
     display: flex;
-    width: 46%;
-    height: 200px;
+    width: 30%;
+    height: 250px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgb(255, 255, 255);
+    box-shadow: 0 0 6px 0 #af20d3;
     margin-left: 20px;
+    padding: 20px;
 }
 /* Borde Cirulo*/
 .cards .card img{
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 5px solid #ffffff;/*BordeBlanco*/
-    border-radius: 50%;/*Hace redondo el contorno*/
+    border: 5px solid #ffffff; /* Borde blanco */
+    border-radius: 50%; /* Hace redondo el contorno */
     display: block;
+    margin-bottom: 10px;
+    margin-right: 30px;
 }
 /*Fondo Cajas*/
 .cards .card > contenido-texto-card{
@@ -233,23 +238,39 @@ header .textos-header{
 .servicio-cont{
     display: flex;
     justify-content: space-between;
+    border-radius: 5px;
     align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .servicio-ind{
     width: 28%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 6px 0 #af20d3;
 }
 
 .servicio-ind img{
-    width: 90%;
+    width: 50%;
+}
+
+.servicio-ind p{
+    font-size: 12px;
+    color: #dddddd;
+    margin-top: 10px;
 }
 .servicio-ind h3{
-    margin: 10px 0;
-}
-.servicio-ind p{
-    font-weight: 300;
-    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 /*FOOTER*/
