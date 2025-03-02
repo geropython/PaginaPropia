@@ -73,101 +73,36 @@ header .textos-header{
     font-weight: 300;
     color: rgb(255, 255, 255);
 }
+/*Body*/
 
-
-
-/*SoftWare*/
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
+/* Ajusta las imágenes dentro del contenedor 'sobre-nosotros' */
+.contenedor-sobre-nosotros .contenido-textos img {
+    max-width: 100px; /* Tamaño máximo de la imagen reducido */
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor (hasta el max-width) */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
 }
-.contenido-texto-card p{
-    color: white;
-    font-size: 14px;
-}
-.contenido-texto-card h4{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 5px;
+
+.contenedor-sobre-nosotros .contenido-textos h3{
     color: #20d33e;
+    font-size: 15px;
+    margin-left: 10px;
 }
-
-.cards .card{
+.contenedor-sobre-nosotros .contenido-textos{
     background: rgb(44, 44, 44);
     display: flex;
-    width: 30%;
+    width: 100%;
     height: 250px;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 6px 0 #20d33e;
     margin-left: 20px;
+    margin-bottom: 20px;
     padding: 20px;
 }
-/* Borde Cirulo*/
-.cards .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 5px solid #ffffff; /* Borde blanco */
-    border-radius: 50%; /* Hace redondo el contorno */
-    display: block;
-    margin-bottom: 10px;
-    margin-right: 30px;
-}
-/*Fondo Cajas*/
-.cards .card > contenido-texto-card{
-    width: 60%;
-    color: rgb(255, 255, 255);
-}
-.cards .card > contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
-}
-
-/*Our Services*/
-.about-services{
-    background: rgb(255, 255, 255);
-    padding-bottom: 30px;
-}
-
-.servicio-cont{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-    align-items: center;
-    text-align: center;
+.contenedor-sobre-nosotros .contenido-textos p{
     color: white;
-}
-
-.servicio-ind{
-    width: 28%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(44, 44, 44);
-    border-radius: 5px;
-    width: 400px;
-    height: 300px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 0 6px 0 #20d33e;
-}
-
-.servicio-ind img{
-    width: 50%;
-}
-
-.servicio-ind p{
-    font-size: 12px;
-    color: #dddddd;
-    margin-top: 10px;
-}
-.servicio-ind h3{
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #ffffff;
 }
 
 /*FOOTER*/
