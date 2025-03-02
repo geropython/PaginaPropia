@@ -1,43 +1,48 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "open sans";
+body {
+    font-family: "Open Sans", sans-serif;
 }
+
+/* FORMULARIO */
 #registroForm {
-    background-color:rgb(196, 213, 245);
+    background-color: rgb(196, 213, 245);
     padding: 25px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0 auto;
+    max-width: 600px;
     box-shadow: 1px 1px 10px black;
+    margin-bottom: 50px;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
 }
-label.inline{
+
+label.inline {
     display: inline-block;
 }
 
-input, select{
+input, select {
     padding: 8px;
     margin-bottom: 10px;
-    box-sizing: border-box;
 }
 
-input[type = "checkbox"]{
+input[type="checkbox"] {
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-input[type="Text"], input[type="mail"],input[type="number"],select{
-width: 100%;
+input[type="text"], input[type="mail"], input[type="number"], select {
+    width: 100%;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: cornflowerblue;
     color: white;
     padding: 15px;
@@ -46,19 +51,19 @@ input[type="submit"]{
     width: 100%;
     cursor: pointer;
     transition: .5s ease;
-    /* box-shadow: 5px; */
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: rgb(70, 104, 167);
 }
 
-error{
+.error {
     color: red;
     font-size: 10px;
 }
 
-.contenedor{
+/* CONTENEDOR GENERAL */
+.contenedor {
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
@@ -66,214 +71,229 @@ error{
     overflow: hidden;
 }
 
-.titulo{
-    color: rgb(0, 0, 0);
+.titulo {
+    color: black;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
-
 }
 
-/*Header*/
-header{
+/* HEADER */
+header {
     width: 100%;
     height: 600px;
-    background: #7a0000;    
+    background: #7a0000;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 
-nav{
-    /*Acomodo de Texto superior*/
+nav {
     text-align: right;
     padding: 30px 50px 0 0;
 }
 
-nav > a{
-    color: rgb(255, 255, 255);
-    font-weight: 300;/*ligero*/
-    text-decoration: none;/*exceso de rayado*/
-    margin-right: 10px;/*separacion*/
+nav > a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
     font-size: 20px;
 }
 
-nav > a:hover{/*Cuando pasamos el mouse por arriba*/
-    text-decoration: underline;/*exceso de rayado*/
+nav > a:hover {
+    text-decoration: underline;
     text-decoration-color: #ff0000;
 }
 
-header .textos-header{
+/* TEXTOS HEADER */
+header .textos-header {
     display: flex;
     height: 430px;
     width: 100%;
-    align-items: center;/*alinear verticalmente*/
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
 
-.textos-header h1{
+.textos-header h1 {
     font-size: 50px;
     color: aliceblue;
 }
 
-.textos-header h2{
+.textos-header h2 {
     font-size: 30px;
     font-weight: 300;
-    color: rgb(255, 255, 255);
-}
-
-
-
-/*SoftWare*/
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-.contenido-texto-card p{
     color: white;
-    font-size: 14px;
-}
-.contenido-texto-card h4{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #209ad3;
 }
 
-.cards .card{
+/* SECCIÓN PROYECTOS */
+.proyectos {
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #969696;
+}
+
+/* Cada fila contendrá 3 proyectos */
+.proyectos .proyecto {
     background: rgb(44, 44, 44);
     display: flex;
-    width: 30%;
-    height: 250px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: calc(100% / 3 - 20px);
+    max-width: 300px;
+    height: 250px;
     border-radius: 5px;
     box-shadow: 0 0 6px 0 #ff0000;
-    margin-left: 20px;
     padding: 20px;
+    text-align: center;
 }
-/* Borde Cirulo*/
-.cards .card img{
+
+/* IMAGEN PROYECTO */
+.proyectos .proyecto img {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 5px solid #ffffff; /* Borde blanco */
-    border-radius: 50%; /* Hace redondo el contorno */
-    display: block;
+    border: 5px solid white;
+    border-radius: 50%;
     margin-bottom: 10px;
-    margin-right: 30px;
-}
-/*Fondo Cajas*/
-.cards .card > contenido-texto-card{
-    width: 60%;
-    color: rgb(255, 255, 255);
-}
-.cards .card > contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
 }
 
-/*Our Services*/
-.about-services{
-    background: rgb(255, 255, 255);
-    padding-bottom: 30px;
-}
-
-.servicio-cont{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-    align-items: center;
-    text-align: center;
+/* CONTENIDO DE TEXTO */
+.contenido-texto-proyecto {
+    width: 90%;
     color: white;
 }
 
-.servicio-ind{
-    width: 28%;
+.contenido-texto-proyecto h4 {
     text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.contenido-texto-proyecto a{
+    color: aqua;
+    font-size: 16px;
+}
+
+.contenido-texto-proyecto p {
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+/* SECCIÓN SERVICIOS */
+.about-services {
+    background: white;
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicio-ind {
     background-color: rgb(44, 44, 44);
     border-radius: 5px;
     width: 400px;
     height: 300px;
     padding: 20px;
-    margin: 10px;
     box-shadow: 0 0 6px 0 #ff0000;
+    text-align: center;
+    color: white;
 }
 
-.servicio-ind img{
+.servicio-ind img {
     width: 50%;
 }
 
-.servicio-ind p{
+.servicio-ind h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.servicio-ind p {
     font-size: 12px;
     color: #dddddd;
     margin-top: 10px;
 }
-.servicio-ind h3{
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #ffffff;
+
+/* FOOTER */
+footer {
+    background: rgb(44, 44, 44);
+    padding: 60px 0 30px 0;
+    text-align: center;
 }
 
-/*FOOTER*/
-footer{
-    background:rgb(44, 44, 44);
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
-}
-.contenedor-footer{
+.contenedor-footer {
     display: flex;
-    width: 90%;
-    justify-content: space-evenly;/*repartir elementos equitativos*/
-    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     padding-bottom: 50px;
     border-bottom: 1px solid #858585;
 }
-.content-foo{
+
+.content-foo {
     text-align: center;
 }
-.content-foo h4{
-    color: #ffffff;
+
+.content-foo h4 {
+    color: white;
     border-bottom: 3px solid #ff0000;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-.content-foo p{
-    color: #ffffff;
-}
-.titulo-final{
-    color: #9e9797;
-    text-align: center;
-    font-size: 20px;
-    margin: 20px 0 0 0;
+
+.content-foo p {
+    color: white;
 }
 
-/*Responsive*/
-@media screen and (max-width:900px){
-    header{
+.titulo-final {
+    color: #9e9797;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 900px) {
+    header {
         background-position: center;
     }
-    
-    .contenedor-sobre-nosotros{
-        display: flex;           /* Usar flexbox para la disposición */
-        align-items: center;     /* Centrar los elementos verticalmente */
-        justify-content: space-around;  /* Espacio entre los elementos */
-        flex-wrap: wrap;         /* Permitir que los elementos se ajusten en múltiples líneas si es necesario */
-        gap: 20px; 
+
+    .contenedor-sobre-nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
-    .sobre-nosotros .contenido-textos{
+    .sobre-nosotros .contenido-textos {
         width: 90%;
     }
 
-    .image-about-us{
-        width: 200px;  /* Ajusta el tamaño al valor deseado */
-        height: auto; /* Hace que las imágenes floten a la izquierda del texto */
+    .image-about-us {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Ajuste de proyectos para pantallas más pequeñas */
+    .proyectos .proyecto {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .proyectos .proyecto {
+        width: 100%;
     }
 }

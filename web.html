@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/> <!-- Permite ciertas letras-->
-    <meta name = description content="Pagina de Geronimo Gonzalia"/> <!-- Agrega titulo a la busqueda-->
+    <meta name="description" content="Pagina de Geronimo Gonzalia"/> <!-- Agrega titulo a la busqueda-->
     <meta name="robots" content="index,follow"/> <!-- Agrega robots-->
-    <meta name = "viewport" content="width=device-width, initial-scale = 1.0"/><!-- Resolucion Responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!-- Resolucion Responsiva-->
     
     <title>Desarrollo Web</title>
     <style>
@@ -12,13 +12,24 @@
         {
             border: 1px solid black;
         }
+        .proyectos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .proyecto {
+            flex: 1 1 calc(20% - 10px); /* Asegura que haya 5 tarjetas por línea */
+            margin: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
     </style>
     <!--Icono de la pagina-->
     <link rel="shortcut icon" href="img/Icono/moon.png" type="image/x-icon">
     <!--Referencia del CSS-->
     <link rel="stylesheet" href="web.css">
     <!--Referencia del Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -35,44 +46,57 @@
             <h1>Desarrollo Web</h1>
             <h2>Mis trabajos y proyectos personales</h2>
         </section>
-        <div  class="wave"style="height: 150px; overflow: hidden;" ><!-- Fondo forma de ola-->
+        <div  class="wave" style="height: 150px; overflow: hidden;"><!-- Fondo forma de ola-->
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
                 style="stroke: none; fill: #fff;">
                 </path>
             </svg>
         </div>
-        </div>
     </header>
     <main>
-        
         <section class="clientes contenedor">
             <!-- Proyectos -->
             <h2 class="titulo">Proyectos Personales</h2>
-            <div class="cards">
-                <div class="card">
+            <div class="proyectos">
+                <div class="proyecto">
                      <!--LandingPage-->
-                    
-                    <div class="contenido-texto-card">
+                    <div class="contenido-texto-proyecto">
                         <h4>Landing Page</h4>
                         <a href="https://gonzalialandingpage.netlify.app" target="_blank">Ingresar</a>
                         <p>Esta es una pagina web estatica que contiene informacion y links para informar.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="proyecto">
                     <!--Red Social-->
-                   <div class="contenido-texto-card">
+                    <div class="contenido-texto-proyecto">
                        <h4>Red Social</h4>
                     <a href="https://butterflysocial.netlify.app" target="_blank">Ingresar</a>
                        <p>Este es un prototipo basico de Red Social con las funcionalidades de posteo, edicion y borrado.</p>
                    </div>
-               </div>
-               <div class="card">
+                </div>
+                <div class="proyecto">
                     <!--Login-->
-                    <div class="contenido-texto-card">
+                    <div class="contenido-texto-proyecto">
                         <h4>Login</h4>
                         <a href="https://logingonzalia.netlify.app" target="_blank">Ingresar</a>
                         <p>Este es un Login basico con todos los alert para ingreso.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <!--Formulario-->
+                    <div class="contenido-texto-proyecto">
+                        <h4>Formulario</h4>
+                        <a href="https://formulariogonzalia.netlify.app" target="_blank">Ingresar</a>
+                        <p>Este es un formulario basico con un checkbox, manejo de errores, un inline.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <!--App del clima-->
+                    <div class="contenido-texto-proyecto">
+                        <h4>App del clima</h4>
+                        <a href="https://appclimagonzalia.netlify.app" target="_blank">Ingresar</a>
+                        <p>Esto es una aplicacion del clima. Cuando ingresas una ciudad/pais/pueblo te dice la temperatura en °C, clima y pronostico.</p>
                     </div>
                 </div>
             </div>
@@ -80,10 +104,7 @@
         <!-- Termina Proyectos -->
         <div id="registroForm">
             <h1>Busca tu trabajo Aquí</h1>
-    
-            <form id ="formulary" action="" novalidate autocomplete="off">
-
-                
+            <form id="formulary" action="" novalidate autocomplete="off">
                 <label for="name">Nombre: </label>
                 <input type="text" id="name" name="name" minlength="3" required><br><br>
                 <div class="error" id="errorName"></div>
@@ -93,13 +114,14 @@
                 <div class="error" id="errorLastName"></div>
                 
                 <label for="age">Edad: </label>
-                <input type="number" id="age" name="age" minlength="3" required><br><br>
+                <input type="number" id="age" name="age" required><br><br>
                 <div class="error" id="errorAge"></div>
                 
-                <label for="mail">Mail: </label>
-                <input type="mail" id="mail" name="mail" minlength="11" required><br><br>
+                <label for="email">Mail: </label>
+                <input type="email" id="email" name="email" minlength="11" required><br><br>
                 <div class="error" id="errorMail"></div>
                 
+                <!-- Actividad -->
                 <label for="actividad">Trabajo: </label>
                 <select name="actividad" id="actividad" required>
                     <option value="">Seleccione...</option>
@@ -107,36 +129,29 @@
                     <option value="Aplicacion Unity">Aplicacion Unity</option>
                     <option value="Aplicacion Web">Aplicacion Web</option>
                     <option value="Pagina Web">Pagina Web</option>
-                    <option value="Pagina Web">Landing Page</option>
+                    <option value="Landing Page">Landing Page</option>
                     <option value="Login">Login</option>
                 </select>
                 <div class="error" id="errorActividad"></div><br>
-
-                <select name="actividad" id="actividad" required>
-                    <option value="">Seleccione...</option>
-                    <option value="VideoJuego">VideoJuego</option>
-                    <option value="Aplicacion Unity">Aplicacion Unity</option>
-                    <option value="Aplicacion Web">Aplicacion Web</option>
-                </select>
-                <div class="error" id="errorActividad"></div><br>
+            
+                <!-- Acepto Terminos -->
                 <label class="inline">
                     <input type="checkbox" name="AceptoTerminos" id="AceptoTerminos" required>
                     Acepto Terminos y Condiciones
                 </label>
                 <div class="error" id="errorTerminos"></div><br>
-    
+            
                 <label class="inline">Publicidad</label>
                 <input type="checkbox" name="publicidad" id="publicidad" value="oferta">
                 <label class="inline" for="publicidad">Ofertas</label>
-    
+            
                 <input type="checkbox" name="novedades" id="novedades" value="oferta">
                 <label class="inline" for="novedades">Novedades</label>
                 <div class="error" id="errorPublicidad"></div><br>
-    
+            
                 <input type="submit" value="Registrarse">
             </form>
         </div>
-        
     </main>
     <footer>
         <div class="contenedor-footer">
