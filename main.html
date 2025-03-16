@@ -1,123 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/> <!-- Permite ciertas letras-->
-    <meta name = description content="Pagina de Geronimo Gonzalia"/> <!-- Agrega titulo a la busqueda-->
-    <meta name="robots" content="index,follow"/> <!-- Agrega robots-->
-    <meta name = "viewport" content="width=device-width, initial-scale = 1.0"/><!-- Resolucion Responsiva-->
-    
-    <title>Geronimo Gonzalia</title>
-    <style>
-        table, th, td 
-        {
-            border: 1px solid black;
-        }
-    </style>
-    <!--Icono de la pagina-->
-    <link rel="shortcut icon" href="img/Icono/moon.png" type="image/x-icon">
-    <!--Referencia del CSS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <!--Referencia del Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- BoxIcons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Remixcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Roboto Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Michroma&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <title>Gero Gonzalia Web</title>
+
 </head>
 <body>
+    <!-- Cabecera de pagina web -->
     <header>
-        <nav>
-            <!--Transicion-->
-            <a href="main.html">Menu</a>
-            <a href="acercade.html">Acerca de</a>
-            <a href="web.html">Web</a>
-            <a href="https://gonzaliag.itch.io" target="_blank">Juegos</a>
-            <a href="https://www.linkedin.com/in/geronimo-gonzalia/" target="_blank">LinkedIn</a>
-        </nav>
-        <section class="textos-header">
-            <h1>Geronimo Gonzalia</h1>
-            <h2>Con sitio web propio</h2>
-        </section>
-        <div  class="wave"style="height: 150px; overflow: hidden;" ><!-- Fondo forma de ola-->
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
-                style="stroke: none; fill: #fff;">
-                </path>
-            </svg>
-        </div>
-        </div>
-    </header>
-    <main>
+        <!-- LOGO -->
+        <a href="#" class="logo"> GERONIMO GONZALIA</a>
         
-        <section class="clientes contenedor">
-            <!-- SOFTWARE -->
-            <h2 class="titulo">Software</h2>
-            <div class="cards">
-                <div class="card">
-                     <!--Unity-->
-                    <img src="img/Fondos/Unity Logo.png" alt="" width="90">
-                    <div class="contenido-texto-card">
-                        <h4>Unity</h4>
-                        <p>Creo juegos y aplicaciones interactivas en 2D y 3D para múltiples plataformas, utilizando C# y las herramientas de diseño y animación del motor Unity.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <!--BackEnd-->
-                   <img src="img/Icono/react.png" alt="" width="200">
-                   <div class="contenido-texto-card">
-                       <h4>Back-End</h4>
-                       <p>Me encargo de la lógica del servidor y la base de datos que soportan la aplicación web. Utilizo JavaScript, React, SQL y Node.js.</p>
-                   </div>
-               </div>
-               <div class="card">
-                <!--Front-End-->
-               <img src="img/Icono/H,C,J.png" alt="" width="200">
-               <div class="contenido-texto-card">
-                   <h4>Front-End</h4>
-                   <p>Utilizo HTML, CSS y JavaScript para construir y diseñar el aspecto visual y la interactividad del sitio.</p>
-               </div>
-           </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <!-- BARRA DE NAVEGASION -->
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <!-- Agregar una seccion abajo -->
+            <li><a href="#">Sobre mi</a></li>  
+            <li><a href="https://www.linkedin.com/in/geronimo-gonzalia" target="_blank">LinkedIn</a></li>
+            <li><a href="https://gonzaliag.itch.io" target="_blank">Itch.io</a></li>
+        </ul>
+    </header>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-text">
+                
+                <h1>Quien Soy</h1>
+                
+                <h4>Unity and Full-Stack Developer</h4>
+                <p>Impulsa tu negocio con una página web <b>hecha a la medida</b>, diseñada para destacar y conectar con tus clientes. 
+                    Ofrecemos soluciones personalizadas que combinan <b>diseño atractivo</b>, <b>experiencia de usuario intuitiva</b> y
+                    funcionalidad optimizada para <b>todos los dispositivos</b>. <br>
+                    Nos enfocamos en reflejar la identidad de tu marca mientras generamos resultados reales.
+                    Además, te acompañamos en cada paso, desde la idea inicial hasta el soporte continuo, para garantizar que tu sitio web <br>
+                    sea una inversión <b>sólida y efectiva</b>. <br>
+                    ¡Contáctanos y llevemos tu presencia digital al siguiente nivel!
+                </p>
+                <a href="img/Titulos/CV Unity.pdf" class="cv" target="_blank"></i> CV Unity</a>
+                <a href="img/Titulos/CV-FullStack.pdf" class="cv" target="_blank"></i> CV Full-Stack</a>
+                <a href="#" class="works"><i class="ri-folder-line" target="_blank"></i> Mira mis trabajos</a>
             </div>
-        </section>
-        <!-- Termina Software -->
-        <!-- Servicios -->
-        <section class="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Servicio Propio</h2>
-                <div class="servicio-cont">
-                    <!--Primer servicio-->
-                    <div class="servicio-ind">
-                        <img src="img/Img Icono/Desarrollo VJ.png" alt="" width="200">
-                        <h3>Desarrollo de Videojuegos</h3>
-                        <p>Creación de juegos 2D y 3D con diseño de mecánicas, UI/UX, optimización para móviles y PC, e integración de sistemas como monetización, analytics y multiplayer.</p>
-                    </div>
-                    <!--Segundo servicio-->
-                    <div class="servicio-ind">
-                        <img src="img/Img Icono/Desarrollo Web.png" alt="" width="200">
-                        <h3>Desarrollo Web</h3>
-                        <p>Creación de páginas y aplicaciones web interactivas con backend en Node.js y .NET, optimización de rendimiento y SEO, e integración con bases de datos y APIs.</p>
-                    </div>
-                </div>
+            <div class="hero-img">
+                <img src="img/Img Icono/FotoGero.png" alt="gero foto">
             </div>
-        </section>
-        <!-- Termina Servicios -->
-    </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Discord</h4>
-                <p>Xarlordmith#5433</p>
-            </div>
-            <br>
-            <div class="content-foo">
-                <h4>Gmail</h4>
-                <p>gonzaliag@gmail.com</p>
-            </div>
-            <br>
-            <div class="content-foo">
-                <h4>Location</h4>
-                <p>Argentina, Buenos Aires</p>
-            </div>
-            <br>
+        </section><hr>
+
+        <!-- ICONS -->
+        <div class="icons">
+            <a href="https://github.com/geropython" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-mail-line"></i></i></a>
         </div>
-        <h2 class="titulo-final">&copy; Gonzaliag Design</h2>
-    </footer>
+
+        <!-- Scroll Down -->
+        <div class="scroll-down">
+            <a href="#sobre-mi"><i class="ri-arrow-down-s-fill"></i></a>
+        </div>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="main.js"></script>
+        
+        <!-- Sobre Mi -->
+        <section id ="sobre-mi" class="sobremi">
+            <div class="sobremi-text">
+                <h1>Sobre Mi</h1><br>
+                <h2>Donde estudie</h2>
+                <h4>UADE, Desarrollo de VideoJuegos</h4>
+                <p></p>
+                <a href="img/Titulos/" class="titulo"></i> Mi titulo</a>
+            </div>
+            <div class="sobremi-img">
+                <img src="img/Icono/UADE.jpg" alt="foto Uade">
+            </div>
+
+            <div class="sobremi-text">
+                <h2>Que curso hice</h2>
+                <h4>Digital House, Full-Stack Developer</h4>
+                <p></p>
+                <a href="img/Titulos/" class="titulo"></i> Mi titulo</a>
+            </div>
+            <div class="sobremi-img">
+                <img src="img/Icono/digital house.png" alt="foto DH">
+            </div>
+        </section><hr>
 </body>
 </html>
