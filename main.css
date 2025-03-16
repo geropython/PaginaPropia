@@ -173,7 +173,7 @@ section{
 }
 .sobremi h1{
     font-family: 'Roboto Mono', monospace;
-    font-size: 40px;
+    font-size: 30px;
     box-shadow: #35a3d6;
     margin: 0; 
     margin-left: 60%; 
@@ -182,7 +182,7 @@ section{
 
 .sobremi-text h2{
     font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1;
     margin: 0 0 30px 50px;  
     margin-left: 60px; 
@@ -192,7 +192,7 @@ section{
 .sobremi-text h4{ /*Unity*/
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 60px;
 }
 
