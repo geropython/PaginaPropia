@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
     <!-- BoxIcons -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <!-- Remixcons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,94 +17,56 @@
     <title>Gero Gonzalia Web</title>
 
 </head>
-<body>
+<body id="top">
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
     <!-- Cabecera de pagina web -->
     <header>
         <!-- LOGO -->
         <a href="#" class="logo"> GERONIMO GONZALIA</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <button type="button" class="bx bx-menu" id="menu-icon" aria-label="Abrir menú" aria-controls="main-navigation" aria-expanded="false"></button>
         <!-- BARRA DE NAVEGASION -->
-        <ul class="navlist">
-            <li><a href="https://www.linkedin.com/in/geronimo-gonzalia" target="_blank">LinkedIn</a></li>
-            <li><a href="https://gonzaliag.itch.io" target="_blank">Itch.io</a></li>
+        <ul class="navlist" id="main-navigation">
+            <li><a href="Proyectos/Unity/unity.html">Videojuegos</a></li>
+            <li><a href="Proyectos/Web/web.html">Paginas Web</a></li>
         </ul>
     </header>
 
         <!-- HERO SECTION -->
+        <main id="main-content">
         <section class="hero">
             <div class="hero-text">
                 <h1>Quien Soy</h1>
-                <h4>Unity and Full-Stack Developer</h4>
                 <p>Impulsa tu negocio con una página web <b>hecha a la medida</b>, diseñada para destacar y conectar con tus clientes. 
-                    Ofrecemos soluciones personalizadas que combinan <b>diseño atractivo</b>, <b>experiencia de usuario intuitiva</b> y
+                    Ofrezco soluciones personalizadas que combinan <b>diseño atractivo</b>, <b>experiencia de usuario intuitiva</b> y
                     funcionalidad optimizada para <b>todos los dispositivos</b>. <br>
-                    Nos enfocamos en reflejar la identidad de tu marca mientras generamos resultados reales.
-                    Además, te acompañamos en cada paso, desde la idea inicial hasta el soporte continuo, para garantizar que tu sitio web <br>
+                    Me enfoco en reflejar la identidad de tu marca mientras generamos resultados reales.
+                    Además, te acompaño en cada paso, desde la idea inicial hasta el soporte continuo, para garantizar que tu sitio web <br>
                     sea una inversión <b>sólida y efectiva</b>. <br>
-                    ¡Contáctanos y llevemos tu presencia digital al siguiente nivel!
+                    ¡Contáctame y llevemos tu presencia digital al siguiente nivel!
                 </p>
-                <a href="img/Titulos/CV Unity.pdf" class="cv" target="_blank"></i> CV Unity</a>
-                <a href="img/Titulos/CV-FullStack.pdf" class="cv" target="_blank"></i> CV Full-Stack</a>
+                <a href="img/Titulos/CV-Unity.pdf" class="cv" target="_blank" rel="noopener noreferrer">CV Unity</a>
+                <a href="img/Titulos/CV-FullStack.pdf" class="cv" target="_blank" rel="noopener noreferrer">CV Full-Stack</a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gonzaliag%40gmail.com" class="cv contact-button" target="_blank" rel="noopener noreferrer">Contactame</a>
             </div>
             <div class="hero-img">
-                <img src="img/Img Icono/FotoGero.png" alt="gero foto">
+                <img src="img/Img Icono/FotoGero.png" alt="Retrato de Geronimo Gonzalia">
+                <h4>Unity and Full-Stack Developer</h4>
             </div>
         </section><hr>
+        </main>
 
         <!-- ICONS -->
-        <div class="icons">
-            <a href="https://github.com/geropython" target="_blank"><i class="ri-github-fill"></i></a>
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-mail-line"></i></i></a>
-        </div>
+        <nav class="icons" aria-label="Redes sociales y contacto">
+            <a href="https://github.com/geropython" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ri-github-fill" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/geronimo-gonzalia" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-fill" aria-hidden="true"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gonzaliag%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Redactar correo a gonzaliag@gmail.com"><i class="ri-mail-line" aria-hidden="true"></i></a>
+            <a href="https://gonzaliag.itch.io" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Itch.io"><i class="ri-gamepad-line" aria-hidden="true"></i></a>
+        </nav>
 
         <!-- Scroll Reveal -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
         <script src="script.js"></script>
 
-        <!-- PROYECTOS PERSONALES -->
-        <section class="proyectos-personales">
-            <h2>Proyectos Personales</h2>
-            <div class="proyectos-grid">
-                <div class="proyecto-card">
-                    <h3>Red Social</h3>
-                    <a href="https://butterflysc.netlify.app" class="proyecto-btn" target="_blank" rel="noopener noreferrer">Ingresar</a>
-                    <p>Este es un prototipo básico de Red Social con funcionalidades de posteo, edición y borrado.</p>
-                </div>
-                <div class="proyecto-card">
-                    <h3>Login</h3>
-                    <a href="https://logingonzalias.netlify.app" class="proyecto-btn" target="_blank" rel="noopener noreferrer">Ingresar</a>
-                    <p>Este es un Login básico con todos los alert para ingreso.</p>
-                </div>
-                <div class="proyecto-card">
-                    <h3>Formulario</h3>
-                    <a href="https://formularygonzalia.netlify.app" class="proyecto-btn" target="_blank" rel="noopener noreferrer">Ingresar</a>
-                    <p>Este es un formulario básico con un checkbox, manejo de errores, un inline.</p>
-                </div>
-                <div class="proyecto-card">
-                    <h3>App del clima</h3>
-                    <a href="https://appdeclimagonzalia.netlify.app" class="proyecto-btn" target="_blank" rel="noopener noreferrer">Ingresar</a>
-                    <p>Esto es una aplicación del clima. Cuando ingresas una ciudad/pais/pueblo te dice la temperatura en °C, el clima y más.</p>
-                </div>
-                <div class="proyecto-card">
-                    <h3>App de Películas</h3>
-                    <a href="https://apppeliculasgonzalia.netlify.app" class="proyecto-btn" target="_blank" rel="noopener noreferrer">Ingresar</a>
-                    <p>Esto es una aplicación para buscar películas. Cuando ingresas el nombre de la película te muestra todo el detalle.</p>
-                </div>
-                <div class="proyecto-card">
-                    <h3>Color Hex Generator</h3>
-                    <a href="#" class="proyecto-btn" target="_blank" rel="noopener noreferrer">Ingresar</a>
-                    <p>Esto es una aplicación para generar códigos de color en formato hexadecimal.</p>
-                </div>
-                <div class="proyecto-card">
-                    <h3>Interest Calculator</h3>
-                    <a href="#" class="proyecto-btn" target="_blank" rel="noopener noreferrer">Ingresar</a>
-                    <p>Esto es una aplicación para calcular intereses. Puedes ingresar el monto, la tasa de interés y el tiempo para obtener el interés total.</p>
-                </div>
-            </div>
-        </section>
-
-</body>
 <footer>
     <div class="contenedor-footer">
         <div class="content-foo">
@@ -122,4 +84,5 @@
     </div>
     <h2 class="titulo-final">&copy; Gonzaliag Design</h2>
 </footer>
+</body>
 </html>
