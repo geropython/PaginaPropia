@@ -1,0 +1,99 @@
+/* Media Queries para hacer responsiva la pagina */
+
+/* 992 PX */
+@media (max-width:992px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+    .hero-text{
+        padding-top: 0;
+    }
+    .hero-text p{
+        font-size: 70%;
+    }
+    .icons{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+
+/* 768 PX */
+@media (max-width: 768px){
+    .menu-icon-action{
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #menu-icon{
+        display: block; /*Mostrar el ícono en móvil*/
+    }
+
+    .hero-text{
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-img img{
+        margin: 0;
+    }
+
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        background-color: #040d1dd2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all 1s ease;
+    }
+
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+
+    .navlist.open{
+        right: 0;
+    }
+
+    .pagina-web .navlist {
+        position: static;
+        right: auto;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        background: transparent;
+    }
+
+    .pagina-web .navlist a {
+        margin: 7px 0 7px 24px;
+    }
+}

@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Inconsolata', monospace;
+    list-style: none; /*Sacar puntitos*/
+    text-decoration: none; /*Sacar subrayado*/
+    color: white;
+}
+
+body{
+    background: linear-gradient(245.59deg, #103350 0%, #1c3c6d 25%, #131313 75%);
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+header{
+    position: fixed; /* Fijo en pantalla superior */
+    top: 0;
+    right: 0;
+    z-index: 100; /* Mostrar el header por encima */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+    backdrop-filter: blur(5px); /* Opcional: Desenfoque para mayor efecto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skip-link {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 200;
+    padding: 10px 14px;
+    transform: translateY(-150%);
+    background: #00c3ff;
+    color: #071826;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.pagina-web header {
+    position: sticky;
+    justify-content: flex-end;
+}
+
+.pagina-unity header {
+    position: sticky;
+}
+
+.pagina-web .navlist {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+/* LOGO */
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid rgb(0, 195, 255);
+}
+
+#menu-icon{
+    display: none; /*Por defecto no mostrar el icono*/
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+#menu-icon:focus-visible,
+.navlist a:focus-visible,
+.hero-text a:focus-visible,
+.icons a:focus-visible {
+    outline: 2px solid #00c3ff;
+    outline-offset: 4px;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon-action{
+    display: none;
+}
+
+/* Color letras parrafos */
+b{
+    color: rgb(0, 195, 255);
+}
+
+section{
+    padding: 0;
+}
+
+

@@ -1,0 +1,13 @@
+{
+  "name": "pagina-propia",
+  "private": true,
+  "scripts": {
+    "build:css": "npm run build:css:inicio && npm run build:css:unity && npm run build:css:web",
+    "build:css:inicio": "sass --no-source-map inicio/scss/main.scss inicio/css/main.css",
+    "build:css:unity": "sass --no-source-map unity/scss/main.scss unity/css/main.css",
+    "build:css:web": "sass --no-source-map web/scss/main.scss web/css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

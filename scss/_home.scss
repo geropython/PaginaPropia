@@ -1,0 +1,206 @@
+/* Hero Section */
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh; /*Altura viewport*/
+    background:none;
+    position: relative; /*Permite usar top,botom,left y right*/
+    display: grid; /*Permite la división de columnas en el hero*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem; /*hay espacio de 2 rem entre las columnas*/
+}
+
+.hero-text h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 0 30px 50px;  
+    margin-left: 60%; 
+    color: #ffffff;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-img h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-img img{
+    width: 400px;
+    margin: 10% ;
+    height: auto;
+    transition: all 3s;
+}
+
+.hero-img img:hover{
+    transform: scale(1.04);
+    opacity: 0.9;
+}
+
+.hero-text a{
+    display: inline-block;
+    background-color: #3a3a3a;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-left: 50px; /* Reduce la separación horizontal */
+    text-transform: uppercase;
+    transition: all 2s ease ;
+}
+
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text p{
+    font-size: 80%;
+    margin: 0 0 40px 50px;
+    margin-left: 100px;
+    line-height: 1.9; 
+}
+
+.hero-text a.works{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.works i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Sobre Mi */
+.sobremi{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh; /*Altura viewport*/
+    background:none;
+    position: relative; /*Permite usar top,botom,left y right*/
+    display: grid; /*Permite la división de columnas en el hero*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem; /*hay espacio de 2 rem entre las columnas*/
+}
+.sobremi h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    box-shadow: #35a3d6;
+    margin: 0; 
+    margin-left: 60%; 
+}
+
+
+.sobremi-text h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 0 30px 50px;  
+    margin-left: 60px; 
+    color: #35a3d6;
+}
+
+.sobremi-text h4{ /*Unity*/
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 60px;
+}
+
+.sobremi-img img{
+    width: 200px;
+    margin: 10% ;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.sobremi-text a{
+    display: inline-block;
+    background-color: #3a3a3a;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-left: 50px; /* Reduce la separación horizontal */
+    text-transform: uppercase;
+    transition: all 2s ease ;
+}
+
+.sobremi-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.sobremi-text p{
+    font-size: 80%;
+    margin: 0 0 40px 50px;
+    margin-left: 100px;
+    line-height: 1.9; 
+}
+
+.sobremi-text a.works{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.sobremi-text a.works i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Iconos */
+.icons{
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    margin: 25px 0;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.icons i:hover{
+    color: #4d4d4d;
+    transform: translateY(-5px);
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 30px;
+    background-color: #212d3d;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
